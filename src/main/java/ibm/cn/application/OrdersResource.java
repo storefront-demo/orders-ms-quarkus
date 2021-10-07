@@ -41,7 +41,7 @@ public class OrdersResource {
 	}
     
     @GET
-    @RolesAllowed({"user","admin"})
+//    @RolesAllowed({"user","admin"})
     @Produces(MediaType.APPLICATION_JSON)
     public Response getOrders() throws Exception {
         try {
@@ -75,7 +75,7 @@ public class OrdersResource {
     }
     
     @GET
-    @RolesAllowed({"user","admin"})
+//    @RolesAllowed({"user","admin"})
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
     public Response getOrdersById(@PathParam("id") String id) throws Exception {
@@ -111,7 +111,7 @@ public class OrdersResource {
     }
 
     @POST
-    @RolesAllowed({"user","admin"})
+//    @RolesAllowed({"user","admin"})
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(
