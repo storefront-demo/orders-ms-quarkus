@@ -156,7 +156,7 @@ public class OrdersResource {
     }
     
     @GET
-    @RolesAllowed({"user","admin"})
+//    @RolesAllowed({"user","admin"})
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/cartprice")
     public Response getTotalPrice() throws Exception {
